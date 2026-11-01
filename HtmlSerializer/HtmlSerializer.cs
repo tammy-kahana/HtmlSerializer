@@ -2,7 +2,7 @@ using System.Text.RegularExpressions;
 
 namespace HtmlSerializer
 {
-    public static class HtmlParser
+    public static class HtmlSerializer
     {
         private static readonly HttpClient _client = new();
 

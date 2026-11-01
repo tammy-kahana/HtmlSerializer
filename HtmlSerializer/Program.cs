@@ -1,7 +1,7 @@
 using HtmlSerializer;
 
-var html = await HtmlParser.Load("https://maft.co.il");
-var root = HtmlParser.BuildTree(html);
+var html = await HtmlSerializer.HtmlSerializer.Load("https://maft.co.il");
+var root = HtmlSerializer.HtmlSerializer.BuildTree(html);
 
 var results = root.Query(Selector.Parse("div a"));
 Console.WriteLine(results.Count);
